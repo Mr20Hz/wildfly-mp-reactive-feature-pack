@@ -26,7 +26,7 @@
     </resources>
     <dependencies>
         <module name="io.vertx.core"/>
-        <module name="io.netty"/>
+        <module name="io.netty.netty-codec"/>
         <module name="org.apache.qpid.proton"/>
         <module name="java.security.sasl"/>
     </dependencies>
