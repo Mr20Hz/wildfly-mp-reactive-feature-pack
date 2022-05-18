@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module name="io.micrometer.core" xmlns="urn:jboss:module:1.8">
+
+
+    <resources>
+        <artifact name="${io.micrometer:micrometer-core}"/>
+    </resources>
+</module>

@@ -36,17 +36,19 @@
         <module name="io.vertx.core"/>
         <module name="io.vertx.proton"/>
         <module name="javax.annotation.api"/>
-        <module name="javax.enterprise.api" />
+        <module name="javax.enterprise.api"/>
         <module name="org.apache.qpid.proton"/>
         <module name="org.eclipse.microprofile.config.api"/>
         <module name="org.eclipse.microprofile.reactive-messaging.api"/>
         <module name="org.eclipse.microprofile.reactive-streams-operators.api"/>
         <module name="org.eclipse.microprofile.reactive-streams-operators.core" services="import"/>
-        <module name="org.jboss.logging" />
+        <module name="org.jboss.logging"/>
         <module name="org.jboss.weld.api"/>
         <module name="org.jboss.weld.core"/>
         <module name="org.jboss.weld.spi"/>
         <module name="org.reactivestreams"/>
+        <module name="io.opentelemetry.api" services="import"/>
+        <module name="io.opentelemetry.context" services="import"/>
         <module name="org.slf4j"/>
     </dependencies>
 </module>

@@ -21,6 +21,8 @@
     </dependencies>
 
     <packages>
+        <package name="io.netty.netty-codec-mqtt"/>
+        <package name="io.micrometer.core"/>
         <package name="io.smallrye.reactive.messaging.connector.mqtt"/>
     </packages>
 </layer-spec>

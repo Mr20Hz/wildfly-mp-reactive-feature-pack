@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<module name="io.netty.netty-codec-mqtt" xmlns="urn:jboss:module:1.8">
+
+
+    <resources>
+        <artifact name="${io.netty:netty-codec-mqtt}"/>
+    </resources>
+</module>

@@ -51,12 +51,15 @@
         <version.io.smallrye.smallrye-mutiny>1.1.2</version.io.smallrye.smallrye-mutiny>
         <version.io.vertx>4.2.1</version.io.vertx>
         <version.org.eclipse.microprofile.context-propagation.api>1.2</version.org.eclipse.microprofile.context-propagation.api>
+        <version.io.netty>4.1.69.Final</version.io.netty>
         <!-- Not from WildFly -->
         <version.io.rest-assured>4.1.2</version.io.rest-assured>
         <version.io.smallrye.smallrye-context-propagation>1.1.0</version.io.smallrye.smallrye-context-propagation>
         <version.io.strimzi.test-container>0.20.1</version.io.strimzi.test-container>
         <version.org.testcontainers>1.15.2</version.org.testcontainers>
         <version.org.waitility>4.0.2</version.org.waitility>
+
+
 
         <!-- Plugin versions and their dependency versions -->
         <version.org.jboss.galleon>4.2.7.Final</version.org.jboss.galleon>
@@ -372,6 +375,29 @@
                     </exclusion>
                 </exclusions>
             </dependency>
+                <dependency>
+                    <groupId>io.netty</groupId>
+                    <artifactId>netty-codec-mqtt</artifactId>
+                    <version>${version.io.netty}</version>
+                    <exclusions>
+                        <exclusion>
+                            <groupId>*</groupId>
+                            <artifactId>*</artifactId>
+                        </exclusion>
+                    </exclusions>
+                </dependency>
+            <dependency>
+                <groupId>io.micrometer</groupId>
+                <artifactId>micrometer-core</artifactId>
+                <version>1.8.4</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>*</groupId>
+                        <artifactId>*</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+
             <!-- This does not go into the modules so don't worry about exclusions -->
             <dependency>
                 <groupId>org.wildfly.checkstyle</groupId>
