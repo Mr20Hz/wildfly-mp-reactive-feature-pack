@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<module name="io.netty.netty-codec-mqtt" xmlns="urn:jboss:module:1.8">
+<module name="io.netty.netty-codec-mqtt" xmlns="urn:jboss:module:1.9">
 
 
     <resources>

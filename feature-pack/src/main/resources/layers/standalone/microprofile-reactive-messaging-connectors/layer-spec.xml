@@ -20,5 +20,6 @@
         <layer name="microprofile-reactive-messaging-amqp"/>
         <layer name="microprofile-reactive-messaging-kafka"/>
         <layer name="microprofile-reactive-messaging-mqtt"/>
+        <layer name="microprofile-reactive-messaging-rabbitmq"/>
     </dependencies>
 </layer-spec>

@@ -15,19 +15,18 @@
   ~ limitations under the License.
   -->
 
-<module xmlns="urn:jboss:module:1.9" name="io.smallrye.reactive.messaging.connector">
-    <!--
-        Keep this module here. When provisioning it will hopefully override the one from WildFly
-        so that we can add more connectors if desired!
-    -->
+<module xmlns="urn:jboss:module:1.9" name="io.vertx.client.rabbitmq">
     <properties>
         <property name="jboss.api" value="private"/>
     </properties>
 
+    <resources>
+        <artifact name="${io.vertx:vertx-rabbitmq-client}"/>
+        <artifact name="${com.rabbitmq:amqp-client}"/>
+    </resources>
+
     <dependencies>
-        <module name="io.smallrye.reactive.messaging.connector.amqp" optional="true" export="true" services="export"/>
-        <module name="io.smallrye.reactive.messaging.connector.kafka" optional="true" export="true" services="export"/>
-        <module name="io.smallrye.reactive.messaging.connector.mqtt" optional="true" export="true" services="export"/>
-        <module name="io.smallrye.reactive.messaging.connector.rabbitmq" optional="true" export="true" services="export"/>
+        <module name="io.netty.netty-codec"/>
+        <module name="io.vertx.core"/>
     </dependencies>
 </module>
