@@ -15,18 +15,13 @@
   ~ limitations under the License.
   -->
 
-<module xmlns="urn:jboss:module:1.9" name="io.vertx.client.rabbitmq">
-    <properties>
-        <property name="jboss.api" value="private"/>
-    </properties>
+<module xmlns="urn:jboss:module:1.9" name="com.rabbitmq.amqp-client">
 
     <resources>
-        <artifact name="${io.vertx:vertx-rabbitmq-client}"/>
+        <artifact name="${com.rabbitmq:amqp-client}"/>
     </resources>
 
     <dependencies>
-        <module name="com.rabbitmq.amqp-client"/>
-        <module name="io.micrometer.core"/>
         <module name="io.netty.netty-codec"/>
         <module name="io.vertx.core"/>
     </dependencies>
