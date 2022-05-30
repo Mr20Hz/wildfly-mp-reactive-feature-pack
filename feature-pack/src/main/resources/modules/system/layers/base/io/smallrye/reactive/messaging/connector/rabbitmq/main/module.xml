@@ -23,12 +23,14 @@
 
     <resources>
         <artifact name="${io.smallrye.reactive:smallrye-reactive-messaging-rabbitmq}"/>
+
     </resources>
     <dependencies>
         <module name="io.smallrye.config" services="import"/>
         <module name="io.smallrye.reactive.converters.api"/>
         <module name="io.smallrye.reactive.messaging"/>
         <module name="io.smallrye.reactive.mutiny"/>
+        <module name="com.rabbitmq.amqp-client" services="import"/>
         <module name="io.smallrye.reactive.mutiny.reactive-streams-operators"/>
         <module name="io.smallrye.reactive.mutiny.vertx-core"/>
         <module name="io.smallrye.reactive.mutiny.vertx-rabbitmq-client" services="import"/>
