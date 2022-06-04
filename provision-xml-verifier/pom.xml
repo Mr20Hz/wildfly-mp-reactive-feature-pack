@@ -28,6 +28,11 @@
     <artifactId>wildfly-microprofile-provision-xml-verifier</artifactId>
 
     <name>WildFly Reactive MicroProfile - Provision.xml verifier</name>
+    <properties>
+        <enforcer.skip>true</enforcer.skip>
+        <skipTests>true</skipTests>
+    </properties>
+
     <build>
         <plugins>
             <plugin>

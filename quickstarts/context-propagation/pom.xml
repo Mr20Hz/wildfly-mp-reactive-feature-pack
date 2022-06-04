@@ -28,6 +28,10 @@
     <artifactId>wildfly-microprofile-quickstart-context-propagation</artifactId>
     <name>WildFly Reactive MicroProfile - Quickstart - Context Propagation</name>
     <packaging>war</packaging>
+    <properties>
+        <enforcer.skip>true</enforcer.skip>
+        <skipTests>true</skipTests>
+    </properties>
 
     <dependencies>
         <dependency>

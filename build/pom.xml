@@ -29,6 +29,10 @@
     <name>WildFly Reactive MicroProfile - Build</name>
 
     <packaging>pom</packaging>
+    <properties>
+        <enforcer.skip>true</enforcer.skip>
+        <skipTests>true</skipTests>
+    </properties>
 
     <dependencies>
         <dependency>
